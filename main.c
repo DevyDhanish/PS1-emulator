@@ -7,7 +7,8 @@
 */
 
 
-const char *path = "test rom/Silent Hill (USA)/Silent Hill (USA).bin";
+//const char *path = "test rom/Silent Hill (USA)/Silent Hill (USA).bin";
+const char *path =  "bios/SCPH1001.BIN";
 #define MAX 616494480
 uint8_t rombyte[MAX];  
 
@@ -28,9 +29,9 @@ int main()
 
         if(i % 16 == 15)
         {
+            break;
             printf("\n");
         }
-
     }
 
     printf("%s\n", "Done reading the file at ", path);
